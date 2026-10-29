@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savings Tracker</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: black;
+            color: white;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 97%;
+            margin: auto;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            color: white;
+            margin: 20px;
+        }
+        header h2 {
+            margin: 25px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        button {
+            background-color: rgb(2, 2, 12);
+            border: 1px purple;
+            color: white;
+            border-radius: 10px;
+            margin-right: 15px;
+            margin-top: 10px;
+            width: 130px;
+            height: 60px;
+            font-weight: bolder;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .head {
+            display: flex;
+            gap: 10px;
+            margin-left: 45px;
+        }
+        .money {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            background-color: white;
+            color: black;
+            width: 32%;
+            height: 120px;
+            border-radius: 10px;
+            padding: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .money h2 {
+            font-weight: bold;
+        }
+        .money p {
+            font-weight: lighter;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .h {
+            margin-top: 15px;
+            margin-left: 43px;
+        }
+        .card {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+            margin-left: 43px;
+        }
+        .card-1 {
+            display: flex;
+            flex-direction: column;
+            gap: 35px;
+            padding: 25px;
+            background-color: white;
+            color: black;
+            border-radius: 10px;
+            width: 48.5%;
+            height: 270px;
+        }
+        .cards {
+            display: flex;
+            justify-content: space-between;
+            color: black;
+        }
+        img {
+            border-radius: 10px;
+            width: 60px;
+            height: 50px;
+        }
+        .dolls {
+            display: flex;
+            justify-content: space-between;
+        }
+        .dol-emp {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .empty {
+            background-color: aqua;
+            width: 100%;
+            height: 15px;
+            border-radius: 10px;
+        }
+        .empty-1 {
+            background-color: blue;
+            width: 21%;
+            height: 15px;
+            border-radius: 10px;
+        }
+        .percent {
+            display: flex;
+            justify-content: space-between;
+        }
+        .savings {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .savings h3 {
+            margin-top: 15px;
+            margin-left: 43px;
+        }
+        .savings-card {
+            display: flex;
+            gap: 5px;
+            background-color: white;
+            margin: auto;
+            padding: 20px;
+            width: 93.5%;
+            height: 250px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        .child-card {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            background-color: white;
+            color: black;
+            width: 14%;
+            height: 220px;
+            padding: 5px;
+        }
+        .savings-child {
+            background-color: lightblue;
+            position: relative;
+            top: 120px;
+            bottom: 0px;
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
+            height: 60px;
+            width: 100%;
+        }
+        .savings-card2 {
+            position: relative;
+            top: 120px;
+        }
+        .third-card {
+            display: flex;
+            flex-direction: column;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            gap: 10px;
+            margin: auto;
+            width: 93.5%;
+        }
+        .third-card h3 {
+            margin-top: 15px;
+        }
+        .third-child {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            background-color: white;
+            color: black;
+            border-radius: 10px;
+            padding: 20px;
+        }
+        .third-grand {
+            display: flex;
+            justify-content: space-between;
+        }
+        .grand-1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            margin: 15px;
+        }
+        .grand-1 img {
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+        }
+        .grand-2 {
+            margin: 15px;
+            color: coral;
+        }
+        .grand {
+            display: flex;
+            flex-direction: column;
+            margin-top: 5px;
+        }
+        .em-1 {
+            width: 98%;
+            margin: auto;
+            height: 1px;
+            background-color: rgb(157, 163, 243);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h2>Savings Tracker</h2>
+            <button>+Add goal</button>
+        </header>
+        <div class="head">
+            <div class="money">
+                <p> Total saved</p>
+                <h2>$8,450</h2>
+                <p style="color: rgb(21, 177, 228);">across 4 goals</p>
+            </div>
+            <div class="money">
+                <p>Monthly deposits</p>
+                <h2>$1,200</h2>
+                <p style="color: rgb(21, 177, 228);">this month</p>
+            </div>
+            <div class="money">
+                <p>Avg. progress</p>
+                <h2>61%</h2>
+                <p style="color: rgb(21, 177, 228);">towards goals</p>
+            </div>
+        </div>
+        <div class="content">
+            <div class="h">
+                <h3>Your goals</h3>
+            </div>
+            <div class="card">
+                <div class="card-1" style="border-top: 5px solid blue;">
+                    <div class="cards">
+                        <p>House deposit</p>
+                        <div class="house">
+                            <img src="house.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="dol-emp">
+                        <div class="dolls">
+                            <h3>$4,200</h3>
+                            <p>0f $20,000</p>
+                        </div>
+                        <div class="empty">
+                            <div class="empty-1"></div>
+                        </div>
+                    </div>
+                    <div class="percent">
+                        <p>21%</p>
+                        <p>Mar. 2026</p>
+                    </div>
+                </div>
+                <div class="card-1" style="border-top: 5px solid orange;">
+                    <div class="cards">
+                        <p>Vacation</p>
+                        <div class="house">
+                            <img src="plane.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="dol-emp">
+                        <div class="dolls">
+                            <h3>$1,850</h3>
+                            <p>0f $3,000</p>
+                        </div>
+                        <div class="empty">
+                            <div class="empty-1" style="background-color: orange; width: 62%;"></div>
+                        </div>
+                    </div>
+                    <div class="percent">
+                        <p>62%</p>
+                        <p>Jul. 2026</p>
+                    </div>
+                </div>
+                <div class="card-1" style="border-top: 5px solid green;">
+                    <div class="cards">
+                        <p>Emergency Funds</p>
+                        <div class="house">
+                            <img src="security.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="dol-emp">
+                        <div class="dolls">
+                            <h3>$1,900</h3>
+                            <p>0f $2,00</p>
+                        </div>
+                        <div class="empty">
+                            <div class="empty-1" style="background-color: green; width: 96%;"></div>
+                        </div>
+                    </div>
+                    <div class="percent">
+                        <p>96%</p>
+                        <p>Aug. 2026</p>
+                    </div>
+                </div>
+                <div class="card-1" style="border-top: 5px solid purple;">
+                    <div class="cards">
+                        <p>New Laptop</p>
+                        <div class="house">
+                            <img src="laptop.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="dol-emp">
+                        <div class="dolls">
+                            <h3>$500</h3>
+                            <p>0f $2,500</p>
+                        </div>
+                        <div class="empty">
+                            <div class="empty-1" style="background-color: purple; width: 21%;"></div>
+                        </div>
+                    </div>
+                    <div class="percent">
+                        <p>21%</p>
+                        <p>Jun. 2026</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="savings">
+            <h3>Savings over time</h3>
+            <div class="savings-card">
+                <div class="child-card">
+                    <div class="savings-child"></div>
+                    <div class="savings-card2"><p>Aug</p></div>
+                </div>
+                <div class="child-card">
+                    <div class="savings-child" style="height: 80px; position: relative; top: 100px;"></div>
+                    <div class="savings-card2" style="position: relative; top: 100px;"><p>Sep</p></div>
+                </div>
+                <div class="child-card">
+                    <div class="savings-child" style="height: 50px; position: relative; top: 130px;"></div>
+                    <div class="savings-card2" style="position: relative; top: 130px;"><p>Oct</p></div>
+                </div>
+                <div class="child-card">
+                    <div class="savings-child" style="height: 120px; position: relative; top: 60px;"></div>
+                    <div class="savings-card2" style="position: relative; top: 60px;"><p>Nov</p></div>
+                </div>
+                <div class="child-card">
+                    <div class="savings-child" style="height: 110px; position: relative; top: 70px;"></div>
+                    <div class="savings-card2" style="position: relative; top: 70px;"><p>Dec</p></div>
+                </div>
+                <div class="child-card">
+                    <div class="savings-child" style="height: 140px; position: relative; top: 40px;"></div>
+                    <div class="savings-card2" style="position: relative; top: 40px;"><p>Jan</p></div>
+                </div>
+                <div class="child-card">
+                    <div class="savings-child" style="height: 170px; position: relative; top: 10px; background-color: black;"></div>
+                    <div class="savings-card2" style="position: relative; top: 10px;"><p>Feb</p></div>
+                </div>
+            </div>
+        </div>  
+        <div class="third-card">
+            <h3>Recent deposits</h3>
+            <div class="third-child">
+                <div class="third-grand">
+                    <div class="grand-1">
+                        <img src="security.jpg" alt="">
+                        <div class="grand">
+                            <h4>Emergency fund</h4>
+                            <small>Feb 14, 2026</small>
+                        </div>
+                    </div>
+                    <div class="grand-2">
+                    <h3>+$300</h3>
+                    </div>
+                </div>
+                <div class="em-1"></div>
+                <div class="third-grand">
+                    <div class="grand-1">
+                        <img src="house.jpg" alt="">
+                        <div class="grand">
+                            <h4>House deposit</h4>
+                            <small>Feb 12, 2026</small>
+                        </div>
+                    </div>
+                    <div class="grand-2">
+                    <h3>+$500</h3>
+                    </div>
+                </div>
+                <div class="em-1"></div>
+                <div class="third-grand">
+                    <div class="grand-1">
+                        <img src="plane.jpg" alt="">
+                        <div class="grand">
+                            <h4>Vacation</h4>
+                            <small>Feb 10, 2026</small>
+                        </div>
+                    </div>
+                    <div class="grand-2">
+                    <h3>+$250</h3>
+                    </div>
+                </div>
+                <div class="em-1"></div>
+                <div class="third-grand">
+                    <div class="grand-1">
+                        <img src="laptop.jpg" alt="">
+                        <div class="grand">
+                            <h4>New Laptop</h4>
+                            <small>Feb 08, 2026</small>
+                        </div>
+                    </div>
+                    <div class="grand-2">
+                    <h3>+$150</h3>
+                    </div>
+                </div>
+            </div>
+        </div> <br> <br>
+    </div>
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6th project</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            display: flex;
+            justify-content: center;
+            background-color: black;
+            gap: 10px;
+            min-height: 50px;
+            width: 100%;
+            z-index: 1000;
+            position: sticky;
+            top: 0;
+            align-items: center;
+        }
+        nav {
+            display: flex;
+            gap: 10px;
+            margin-left: auto;
+            bottom: 0;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+        }
+        button {
+            background-color: black;
+            border: 0;
+            color: yellow;
+            margin-left: auto;
+            margin-right: 8px;
+            /* OR 
+            position: relative;
+            left: 540px; */
+        }
+        .container {
+            display: flex;
+            gap: 20px;
+        }
+        aside {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            background-color: black;
+            margin: 10px;
+            width: 150px;
+            height: 590px;
+            padding: 20px;
+        }
+        aside a {
+            text-decoration: none;
+            color: white;
+        }
+        .box {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            height: 20px;
+            margin-top: 10px;
+            margin-left: 30px;
+        }
+        .card {
+            display: flex;
+            flex-direction: column;
+            border-radius: 5px;
+            background-color: aliceblue;
+            border: 1px solid black;
+            box-shadow: 8px 10px 14px rgba(0, 0, 0, 0.8);
+            width: 330px;
+            height: 280px;
+        }
+        img {
+            width: 100%;
+            height: 150px;
+            border-radius: 5px;
+        }
+        h2{
+            padding: 10px;
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        p {
+            padding: 10px;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        footer {
+            background-color: black;
+            width: 100%;
+            height: 30px;
+            color: white;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="Home">Home</a>
+            <a href="AboutUs">About Us</a>
+            <a href="Services">Services</a>
+            <a href="Contact">Contact</a>
+        </nav>
+        <button>Log out</button>
+    </header>
+    <div class="container">
+        <aside>
+            <a href="Dashboard">Dashboard</a>
+            <a href="Profile">Profile</a>
+            <a href="#Settings">Settings</a>
+            <a href="#Messages">Messages</a>
+            <a href="#Friends">Friends</a>
+            <a href="#Groups">Groups</a>
+            <a href="#Gallery">Gallery</a>
+            <a href="#Help">Help</a>
+            <a href="#Support">Support</a>
+        </aside>
+        <div class="box">
+            <div class="card">
+                <img src="nature.jpg" alt="">
+                <h2>Nature</h2>
+                <p> Beautiful scenery of mountains and rivers </p>
+            </div>
+            <div class="card">
+                <img src="car.jpg" alt="">
+                <h2>Technology</h2>
+                <p>Latest trends in mobile and web apps.</p>
+            </div>
+            <div class="card">
+                <img src="wide back.jpg" alt="">
+                <h2>Sports</h2>
+                <p>Saty updated with football and basketball</p>
+            </div>
+            <div class="card">
+                <img src="education.png" alt="">
+                <h2>Education</h2>
+                <p>Learning resources and study guides</p>
+            </div>
+            <div class="card">
+                <img src="travel.jpg" alt="">
+                <h2>Health</h2>
+                <p>Tips for a healthy lifestyle and wellness</p>
+            </div>
+            <div class="card">
+                <img src="city.jpg" alt="">
+                <h2>Travel</h2>
+                <p>Explore new destinations and culture</p>
+            </div>
+        </div>
+        <aside>
+            <a href="Dashboard">Dashboard</a>
+            <a href="Profile">Profile</a>
+            <a href="#Settings">Settings</a>
+            <a href="#Messages">Messages</a>
+            <a href="#Friends">Friends</a>
+            <a href="#Groups">Groups</a>
+            <a href="#Gallery">Gallery</a>
+            <a href="#Help">Help</a>
+            <a href="#Support">Support</a>
+        </aside>
+    </div>
+    <footer>
+        Privacy Policy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Terms of Service&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Help Center&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Feedback
+    </footer>
+</body>
+</html>

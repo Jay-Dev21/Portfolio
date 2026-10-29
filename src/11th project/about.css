@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: aliceblue;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 15px;
+}
+.head h2 {
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 100px;
+}
+.head-2 {
+    display: flex;
+    gap: 15px;
+}
+nav {
+    margin-top: 5px;
+    display: flex;
+    gap: 20px;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+}
+.sign:hover {
+    border-radius: 5px;
+    text-align: center;
+    width: 85px;
+    background-color: blue;
+}
+nav a:hover {
+    background-color: skyblue;
+    width: 60px;
+    border-radius: 5px;
+    text-align: center;
+}
+.sign {
+    width: 85px;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    padding: 5px 0 5px 0;
+    margin-top: -8px;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 90px auto 0 auto;
+    width: 65%;
+    border-radius: 15px;
+    height: 400px;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    margin: 90px 20px 30px 20px;
+    justify-content: center;
+    align-items: center;
+}
+.content h2 {
+    color: black;
+    margin-bottom: 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.content p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+.cards {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    width: 100%;
+    height: 150px;
+    margin: 20px;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    align-items: flex-start;
+    width: 33%;
+    border-radius: 8px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 85%;
+    background-color: aliceblue;
+}
+.card h2 {
+    margin-left: 10px;
+}
+.card p {
+    text-align: left;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 10px;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    height: 310px;
+    background-color: black;
+    margin-top: 20px;
+    color: white;
+}
+.foot {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: 60px 40px 10px 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+}
+.foot-1 {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    gap: 10px;
+    margin-left: 130px;
+}
+.foot-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: -60px;
+}
+.foot-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 20px;
+}
+.foot-4 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 20px;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    color: blue;
+}
+.copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    gap: 5px;
+}

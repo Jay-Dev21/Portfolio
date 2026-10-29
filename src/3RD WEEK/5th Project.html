@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Cards</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            background-color: black;
+            position: sticky;
+            top: 0;
+            min-height: 100px;
+            width: 100%;
+            z-index: 1000;
+            align-items: center;
+        }
+        nav{
+            display: flex;
+            gap: 20px;
+            color: white;
+            bottom: 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+        .container {
+            display: flex;
+        }
+        aside{
+            display: flex;
+            flex-direction: column;
+            width: 250px;
+            gap: 18px;
+            padding: 10px;
+            background-color: grey;
+            height: 450px;
+        }
+        aside h2 {
+            font-weight: 800;
+        }
+        aside a {
+            text-decoration: none;
+            color: black;
+            padding: 10px;
+        }
+        aside a:hover{
+            color: white;
+            background-color: lightcoral;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            margin: 15px;
+            padding: 10px;
+        }
+        .content h2 {
+            text-align: center;
+            font-weight: 900;
+        }
+        .box {
+            display: flex;
+            flex-direction: row;
+            margin: 20px;
+        }
+        .card{
+            width: 300px;
+            height: 300px;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            margin: 10px;
+            border: 1px solid black;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.6);
+            padding: 20px;
+        }
+        img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-top: 40px;
+        }
+        .card h2 {
+            font-size: 1.2rem;
+            margin: 4px 0;
+            font-weight: 700;
+            padding: 10px;
+        }
+        button {
+            height: 200px;
+            width: 120px;
+            background-color: blue;
+            color: white;
+            border-radius: 8px;
+            margin: 50px;
+            padding: 10px;
+            margin-bottom: 30px;
+        }
+        .card p {
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 10px;
+        }
+        footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            bottom: 0;
+            background-color: black;
+            color: white;
+            height: 70px;
+            width: 100%;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="Home">Home</a>
+            <a href="About">About</a>
+            <a href="Services">Services</a>
+            <a href="Contact">Contact</a>
+        </nav>
+    </header>
+    <div class="container">
+        <aside>
+            <h2>Navigation</h2>
+            <a href="Dashboard">Dashboard</a>
+            <a href="Profile">Profile</a>
+            <a href="#Settings">Settings</a>
+            <a href="#Model">Model</a>
+            <a href="#Invite">Invite</a>
+            <a href="#Transaction">Transaction</a>
+            <a href="#Payment">Payment</a>
+        </aside>
+        <div class="content">
+            <h2>Profile Cards</h2>
+            <div class="box">
+                <div class="card">
+                    <img src="long haired girl.jpg" alt="">
+                    <h2>Ade Lovelace</h2>
+                    <p>Computer Scientist and United States Navy rear admiral</p>
+                    <button>View Profile</button>
+                </div>
+                <div class="card">
+                    <img src="mutants.png" alt="">
+                    <h2>James Hopper</h2>
+                    <p>Computer Scientist and United States Navy rear admiral</p>
+                    <button>View Profile</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer> &copy;2026 Juwon Computing Limited. All rights reserved.</footer>
+</body>
+</html>

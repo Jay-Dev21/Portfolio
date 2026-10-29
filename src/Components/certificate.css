@@ -1,0 +1,101 @@
+.project-cont {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 20px 10px 20px;
+    background-color: white;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.project-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+}
+.pro-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: auto;
+    padding: 10px;
+    width: 28%;
+    height: 190px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(255, 243, 243);
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 6px;
+    transition: ease 0.3s, box-shadow 0.3s;
+}
+.pro-box:hover {
+    transform: translate(12px);
+}
+.pro-box span {
+    font-size: 2.5rem;
+}
+.pro-box h3 {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: black;
+}
+.pro-box p {
+    color: rgba(0, 0, 0, 0.537);
+    font-size: 17px;
+    font-weight: 600;
+}
+
+
+/* ===== TABLET RESPONSIVENESS ===== */
+@media (max-width: 768px) {
+    .project-cont {
+        margin: 20px 10px 10px 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .project-box {
+        gap: 5px;
+        padding: 10px;
+    }
+    .pro-box {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+}
+
+/* ===== MOBILE RESPONSIVENESS ===== */
+@media (max-width: 480px) {
+    .project-cont {
+        margin: 20px 10px 10px 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .project-box {
+        gap: 5px;
+        padding: 10px;
+    }
+    .pro-box {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+}
+
+/* ===== EXTRA SMALL SCREENS ===== */
+@media (max-width: 320px) {
+    .project-cont {
+        margin: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .project-box {
+        gap: 5px;
+        padding: 10px;
+    }
+    .pro-box {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+}

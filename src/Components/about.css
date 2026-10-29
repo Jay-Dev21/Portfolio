@@ -1,0 +1,59 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    color: yellow;
+}
+.big {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.smalls {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    margin: 20px;
+}
+
+/* ===== TABLET RESPONSIVENESS ===== */
+@media (max-width: 768px) {
+    .about {
+        margin-top: 20px;
+    }
+    .big {
+        font-size: 1.2rem;
+    }
+    .smalls {
+        margin: 15px;
+    }
+}
+
+
+/* ===== MOBILE RESPONSIVENESS ===== */
+@media (max-width: 480px) {
+    .about {
+        margin-top: 10px;
+    }
+    .big {
+        font-size: 1.1rem;
+    }
+    .smalls {
+        margin: 10px;
+    }
+}
+
+/* ===== EXTRA SMALL SCREENS ===== */
+@media (max-width: 320px) {
+    .about {
+        margin-top: 5px;
+    }
+    .big {
+        font-size: 1rem;
+    }
+    .smalls {
+        margin: 5px;
+    }
+}

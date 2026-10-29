@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"name": "my-App",
+			"path": "../../../my-App"
+		},
+		{
+			"name": "IT WEB",
+			"path": "../../../OneDrive/Desktop/IT WEB"
+		},
+		{
+			"name": "JavaScript",
+			"path": "../../../JavaScript"
+		},
+		{
+			"path": "../.."
+		}
+	],
+	"settings": {}
+}

@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            background-color: white;
+            justify-content: space-between;
+        }
+        header h2 {
+            margin: 20px 10px;
+            letter-spacing: 3px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-left: 15px;
+        }
+        nav {
+            display: flex;
+            gap: 40px;
+            margin-right: 26px;
+            align-items: center;
+            justify-content: center;
+        }
+        nav a {
+            text-decoration: none;
+            color: red;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .content {
+            color: white;
+            background-color: coral;
+            padding: 30px;
+            border-radius: 15px;
+            height: 250px;
+            display: flex;
+            margin: 20px;
+        }
+        .card1 {
+            display: flex;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 35px;
+            padding: 20px;
+        }
+        .empty {
+            margin: auto 0;
+            width: 1px;
+            background-color: white;
+            height: 100px;
+        }
+        .card2 {
+            display: flex;
+            flex-direction: column;
+            margin: 10px 60px;
+            padding: 10px 25px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        button {
+            margin: 10px; 
+            width: 180px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: 900;
+            border-color: coral;
+            border-radius: 15px;
+            min-height: 50px;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            gap: 20px;
+            margin: 20px;
+            height: 490px;
+        }
+        .web {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-start;
+            background-color: black;
+            width: 60%;
+            height: 96%;
+            border-radius: 15px;
+            margin: 10px;
+            padding: 20px 30px;
+        }
+        .web2 {
+            width: 50%;
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+            margin-top: 10px;
+        }
+        .app {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-start;
+            background-color: black;
+            width: 100%;
+            height: 230px;
+            padding: 20px 30px;
+            border-radius: 15px;
+        }
+        .graphic {
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-start;
+            flex-direction: column;
+            background-color: coral;
+            width: 100%;
+            height: 230px;
+            border-radius: 15px;
+            padding: 20px 30px;
+        }
+        .web:hover {
+            background-color: brown;
+            color: black;
+            cursor: pointer;
+        }
+        .app:hover {
+            background-color: darkred;
+            color: aqua;
+            cursor: pointer;
+        }
+        .graphic:hover {
+            background-color: yellow;
+            color: red;
+            cursor: pointer;
+        }
+        .word {
+            color: white;
+            font-size: 25px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .para {
+            display: flex;
+            gap: 10px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 20px;
+            color: white;
+        }
+        .line {
+            background-color: white;
+            width: 30px;
+            height: 2px;
+            margin-top: 10px;
+        }
+        .why-des {
+            display: flex;
+            flex-direction: column;
+        }
+        .why-des h2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .why {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .why h3, p {
+            text-align: center;
+        }
+        .why h3 {
+            letter-spacing: 1.5px;
+        }
+        .s-circle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background-color: coral;
+            height: 100px;
+            width: 100px;
+        }
+        img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            height: 120px;
+            width: 100px;
+        }
+        .circle {
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+            align-items: center;
+        }
+        .design {
+            display: flex;
+            background-color: coral;
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            height: 200px;
+            display: flex;
+            margin: 20px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .act {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin: 30px 40px;
+        }
+        .but {
+            margin: 30px 15px 20px 400px;
+        }
+        .but button {
+            border-color: white;
+            color: white;
+            background-color: coral;
+            width: 200px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        footer {
+            background-color: black;
+            color: white;
+            height: 300px;
+        }
+        .ft {
+            display: flex;
+            padding-top: 40px;
+            padding: auto 20px;
+        }
+        .foot {
+            display: flex;
+            flex-direction: row;
+            margin: auto 20px;
+        }
+        .foot h2 {
+            margin-right: 20px;
+            letter-spacing: 3px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-left: 15px;
+        }
+        .nav {
+            display: flex;
+            gap: 30px;
+            margin-left: 58%;
+        }
+        .nav a {
+            text-decoration: none;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .s-line {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: wheat;
+            height: 0.1%;
+            width: 95%;
+            margin: 40px auto;
+        }
+        .text {
+            display: flex;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .text-1 {
+            margin-left: 40px;
+            text-align: right;
+        }
+        .text-2 {
+            display: flex;
+            flex-direction: column;
+            margin-left: 47%;
+        }
+        .small {
+            display: flex;
+            gap: 4px;
+            justify-content: flex-end;
+            align-items: flex-end;
+            padding-right: 30px;
+        }
+        .small-circle {
+            display: flex;
+            border-radius: 50%;
+            background-color: white;
+            height: 50px;
+            width: 50px;
+        }
+        .small-circle img {
+            border-radius: 50%;
+            background-color: white;
+            height: 50px;
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>DESIGNO</h2>
+        <nav>
+            <a href="Our compnay">OUR COMPANY</a>
+            <a href="locations">LOCATIONS</a>
+            <a href="contact">CONTACT</a>
+        </nav>
+    </header>
+        <div class="content">
+            <div class="card1">
+                <h2>Award-winning <br>custom designings and <br> digital branding</h2>
+            </div>
+            <div class="empty"></div>
+            <div class="card2">
+                <p style="text-align: left;"> with over 10 years in the industry, we are <br>experienced in creating fully responsive websites,<br>
+                app design, and engaging brand experiences. Find <br>out more about our services.</p>
+                <button>LEARN MORE</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="web">
+                <div class="word">
+                    <h4>WEB DESIGN</h4>
+                </div>
+                <div class="para">
+                    <p>VIEW PROJECTS</p>
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="web2">
+                <div class="app">
+                <div class="word">
+                    <h4>APP DESIGN</h4>
+                </div>
+                <div class="para">
+                    <p>VIEW PROJECTS</p>
+                    <div class="line"></div>
+                </div>
+                </div>
+                <div class="graphic">
+                <div class="word">
+                    <h4>GRAPHIC DESIGN</h4>
+                </div>
+                <div class="para">
+                    <p>VIEW PROJECTS</p>
+                    <div class="line"></div>
+                </div>
+                </div>
+            </div>
+        </div> <br> <br>
+        <div class="why-des">
+            <h2>Why Designo?</h2> <br><br>
+            <div class="circle">
+                <div class="why">
+                    <div class="s-circle">
+                        <img src="Star.jpg" alt="">
+                    </div> <br>
+                    <h3>PASSIONATE</h3> <br>
+                    <p>Each projects starts with an in-depth <br>brand research to ensure we only <br>
+                    create products that resonate with <br> your audience</p>
+                </div>
+                <div class="why">
+                    <div class="s-circle">
+                        <img src="Love.jpg" alt="">
+                    </div> <br>
+                    <h3>RESOURCEFUL</h3> <br>
+                    <p>Everything that we do has a strategic <br>purpose. We use an agile approach in <br>
+                    all our projects and value customer <br>collaboration.</p>
+                </div>
+                <div class="why">
+                    <div class="s-circle">
+                        <img src="Settings.jpg" alt="">
+                    </div> <br>
+                    <h3>FRIENDLY</h3> <br>
+                    <p>We are a group of enthusiastics folks <br>who know how to put people first. Our <br>
+                    success depends on our customers <br>being satisfied.</p>
+                </div>
+            </div>
+        </div> <br> <br> <br>
+        <div class="design">
+            <div class="act">
+                <h2>Let's talk about your project</h2> 
+                <p>Ready to take it to the next level? Contact us today and <br>
+                find out how our expertise can help your business grow.</p>
+            </div>
+            <div class="but">
+                <button>GET IN TOUCH</button>
+            </div>
+        </div> <br><br><br><br><br><br><br>
+        <footer>
+            <div class="ft">
+                <div class="foot">
+                    <h2>DESIGNO</h2>
+                </div>       
+                <nav class="nav">
+                    <a href="#OUR COMPANY">OUR COMPANY</a>
+                    <a href="#LOCATION">LOCATIONS</a>
+                    <a href="#CONTACT">CONTACT</a>
+                </nav>
+        </div>
+        <div class="s-line"></div>
+        <div class="text">
+            <div class="text-1">
+                <h3>Designo Central Office</h3>
+                <p style="text-align: left;">3886 Wellington Street <br>
+                Toronto, Ontario M9C3J5</p>
+            </div>
+            <div class="text-2">
+                <p>P: +1 253-863-8967</p>
+                <p>M: contact@designo.co</p>
+            </div>
+        </div>
+            <div class="small">
+                <div class="small-circle">
+                    <img src="facebbok.jpg" alt="">
+                </div>
+                <div class="small-circle">
+                    <img src="LinkedIn.jpg" alt="">
+                </div>
+                <div class="small-circle">
+                    <img src="Youtube.jpg" alt="">
+                </div>
+                <div class="small-circle">
+                    <img src="Pinterest.jpg" alt="">
+                </div>
+            </div>
+        </footer>
+</body>
+</html>

@@ -1,0 +1,145 @@
+.ski {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 20px;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+.ski h2 {
+    font-size: 2.5rem;
+    color: rgb(71, 51, 51);
+    margin-top: 20px;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.ski-box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.ski-text {
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    margin: auto;
+}
+.ski-text h3 {
+    margin-top: 15px;
+    color: rgb(71, 51, 51);
+    font-size: 700;
+    font-size: medium;
+}
+.ski-img {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    margin-top: 5px;
+}
+.ski-empty {
+    width: 65%;
+    height: 23px;
+    background-color: rgba(72, 69, 69, 0.163);
+    border-radius: 12px;
+    margin: auto;
+}
+.ski-emptyii {
+    width: 80%;
+    height: 23px;
+    background-color: aqua;
+    border-radius: 12px;
+}
+
+
+/* ===== TABLET RESPONSIVENESS ===== */
+@media (max-width: 768px) {
+    .ski {
+        margin: 10px;
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+    .ski h2 {
+        font-size: 2rem;
+        margin-top: 15px;
+    }
+    .ski-box {
+        margin-top: 15px;
+    }
+    .ski-text {
+        width: 80%;
+    }
+    .ski-text h3 {
+        font-size: small;
+    }
+    .ski-img {
+        width: 25px;
+        height: 25px;
+        margin-top: 3px;
+    }
+    .ski-empty {
+        width: 80%;
+        height: 20px;
+    }
+}
+
+/* ===== MOBILE RESPONSIVENESS ===== */
+@media (max-width: 480px) {
+    .ski {
+        margin: 10px;
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+    .ski h2 {
+        font-size: 2rem;
+        margin-top: 15px;
+    }
+    .ski-box {
+        margin-top: 15px;
+    }
+    .ski-text {
+        width: 80%;
+    }
+    .ski-text h3 {
+        font-size: small;
+    }
+    .ski-img {
+        width: 25px;
+        height: 25px;
+        margin-top: 3px;
+    }
+    .ski-empty {
+        width: 80%;
+        height: 20px;
+    }
+}
+
+/* ===== EXTRA SMALL SCREENS ===== */
+@media (max-width: 320px) {
+    .ski {
+        margin: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .ski h2 {
+        font-size: 1.5rem;
+        margin-top: 10px;
+    }
+    .ski-box {
+        margin-top: 10px;
+    }
+    .ski-text {
+        width: 80%;
+    }
+    .ski-text h3 {
+        font-size: small;
+    }
+    .ski-img {
+        width: 20px;
+        height: 20px;
+        margin-top: 2px;
+    }
+    .ski-empty {
+        width: 80%;
+        height: 15px;
+    }
+}
